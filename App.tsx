@@ -1,11 +1,11 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
+import { LineChart } from './src/LineChart/LineChart';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
+      <LineChart />
     </View>
   );
 }
@@ -13,8 +13,12 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#1c1b1b',
     alignItems: 'center',
     justifyContent: 'center',
+    padding: 30,
+  },
+  text: {
+    color: '#fff',
   },
 });
